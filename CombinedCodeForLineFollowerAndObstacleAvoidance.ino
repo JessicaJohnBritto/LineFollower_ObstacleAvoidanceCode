@@ -70,69 +70,33 @@ void loop(){
 
   
  //measure Ultrasonic time
- /*time = readUltrasonicDistance(lsonartrig, lsonarecho);
+ time = readUltrasonicDistance(lsonartrig, lsonarecho);
   // convert to cm
   cm = 0.01723 * time;
  // cm = 30;
  Serial.print("cml=");
   Serial.println(cm);
   delay(1000);
-  time = readUltrasonicDistance(rsonartrig, rsonarecho);
-  // convert to cm
-  //cm1=35;*/
- /* cm1 = 0.01723 * time;
- Serial.print("cmr=");
- // Serial.println(cm1);*/
+  
 
-
-  /*if(cm >20 && cm1>20)
-  {
-    forward();
-  }
-  else if(cm<=20)
-  {
-    turnRight();
-  }
-  else if(cm1<=20)
-  {
-    turnLeft();
-  }*/
-
- /* if(cm>30)
+    if(cm>30)
   {
     linefollower();
   }
   else if(cm<=30)
   {
     stop();
-    delay(1000);
-   int k = checkArea(1000);
+    delay(3000);
+   int k = checkArea(3000);
    if(k=1)
    {
     evadeRight(1000);
    }
-   else evadeLeft(1000);
+   else 
+   {
+     evadeLeft(1000);
   }
-     
-  if(cm>30)
-  {
-    Serial.println(1);
-    return 1;
   }
-  else 
-  {
-    
-  }
-    delay(1000);
-    forward();
-    delay(1000);
-    turnLeft();
-    delay(1000);
-    forward();
-}*/
- 
-    linefollower();
- 
  
   delay(250); // Wait for 250 millisecond(s)
 }
