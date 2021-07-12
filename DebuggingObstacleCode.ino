@@ -86,7 +86,7 @@ int checkArea(int radar)
       Serial.println("");
       }
       else return 2;
-      Serial.println("I'm stupid");
+      Serial.println("Testing");
     }
     else return 1;
     
